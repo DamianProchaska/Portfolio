@@ -1,0 +1,75 @@
+*  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #1F2833;
+    color: #C5C6C7;
+    font-family: 'Montserrat';
+}
+
+header {
+    /* background: linear-gradient(0deg, rgba(31,40,51,1) 0%, rgba(69,162,158,1) 100%); */
+    box-shadow: 0 0 10px -3px rgba(69,162,158,1);
+    background-color: #27313d;
+    height: 80px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.hello {
+    font-size: 20px;
+    font-weight: normal;
+    color: #66FCF1;
+}
+
+.name {
+    color: #ccd6f6;
+    font-size: 48px;
+}
+
+.desc {
+    color: #8892b0;
+    font-weight: normal;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+  }
+
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:rgb(69,162,158);
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.ham4 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham4 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham4.active .top {
+    stroke-dashoffset: -68px;
+  }
+  .ham4.active .bottom {
+    stroke-dashoffset: -68px;
+  }
