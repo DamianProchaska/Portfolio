@@ -1,24 +1,53 @@
+:root {
+  /* --bgColor: #1F2833;
+  --mainColor: #66FCF1;
+  --secondColor: rgb(69,162,158);
+  --headerColor: #27313d; */
+  --bgColor: #212121;
+  --headerColor: #323232;
+  --secondColor: #fa7d09af;
+  --mainColor: #f9a825;
+
+
+}
+
+.temp {
+  height: 200px;
+}
+
 *  {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing:border-box;
 }
 
 body {
-    background-color: #1F2833;
-    color: #C5C6C7;
+    background-color: var(--bgColor);
+    /* color: #C5C6C7; */
+    color: #ffffff;
     font-family: 'Montserrat';
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     /* background: linear-gradient(0deg, rgba(31,40,51,1) 0%, rgba(69,162,158,1) 100%); */
-    box-shadow: 0 0 10px -3px rgba(69,162,158,1);
-    background-color: #27313d;
+    box-shadow: 0 0 10px -4px black;
+    background-color: var(--headerColor);
     height: 80px;
 }
 
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(33,33,33,0.2) 0%, rgba(249,168,37,0.1) 100%);
+}
+
 h1 {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 20px;
     padding: 20px;
 }
@@ -26,17 +55,23 @@ h1 {
 .hello {
     font-size: 20px;
     font-weight: normal;
-    color: #66FCF1;
+    color: var(--mainColor);
 }
 
 .name {
-    color: #ccd6f6;
+    color: #ffffff;
+    /* color: #ccd6f6; */
     font-size: 48px;
 }
 
 .desc {
-    color: #8892b0;
     font-weight: normal;
+}
+
+.logo {
+  color: var(--secondColor);
+  font-size: 20px;
+  margin-left: 25px;
 }
 
 .hamRotate.active {
@@ -46,7 +81,7 @@ h1 {
   .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:rgb(69,162,158);
+    stroke:var(--secondColor);
     stroke-width:5.5;
     stroke-linecap:round;
   }
@@ -62,14 +97,130 @@ h1 {
   }
 
 .ham4 .top {
-    stroke-dasharray: 40 121;
-  }
-  .ham4 .bottom {
-    stroke-dasharray: 40 121;
-  }
-  .ham4.active .top {
-    stroke-dashoffset: -68px;
-  }
-  .ham4.active .bottom {
-    stroke-dashoffset: -68px;
-  }
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.photo img {
+    border-radius: 100%;
+    width: 250px;
+    box-shadow: 0 0 10px -4px black;
+}
+
+.links {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  height: 100px;
+  opacity: 0.6;
+  filter: brightness(0) invert(1);
+}
+
+.links a:hover {
+  transition: all 0.3s linear;
+  -webkit-transition: -webkit-filter 0.3s linear;
+  opacity: 1;
+  filter:brightness(1) invert(0);
+}
+
+.links a img {
+  transform: translateY(calc(50px - 30px));
+  width: 60px;
+}
+
+.links a span{
+  margin-left: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+}
+
+button {
+  margin: 10px;
+  margin-top: 50px;
+  width: 130px;
+  padding: 10px;
+  border: none;
+  background: var(--mainColor);
+  font-family: 'Montserrat';
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: black;
+  color: white;
+  width: 70px;
+}
+
+.custom-shape-divider-bottom-1645026081 {
+  position: absolute;
+  top: -29px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645026081 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+.custom-shape-divider-bottom-1645026081 .shape-fill {
+  fill: var(--mainColor);
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  background-color: var(--mainColor);
+  color: black;
+  justify-content: center;
+}
+
+.about h2 {
+  padding-top: 60px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about span {
+  color: white;
+}

@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <p class="logo">About me</p>
         <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
             <path
                   class="line top"
@@ -24,11 +25,52 @@
                   d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
           </svg>
     </header>
+    <section class="landingPage">
+        <h1>
+            <span class="hello">Hi, my name is</span><br>
+            <span class="name">Damian<br>Prochaska</span><br><br>
+            <span class="desc">I'm front-end developer</span>
+        </h1>
+        <div class="photo">
+            <img src="img/DSC_0807.jpg" alt="Profile Picture">
+        </div>
+        <div class="buttons">
+            <button class="aboutBtn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                ABOUT ME
+            </button>
+            <button class="aboutBtn">
+                CV
+            </button>
+        </div>
 
-    <h1>
-        <span class="hello">Hi, my name is</span><br>
-        <span class="name">Damian<br>Prochaska</span><br><br>
-        <span class="desc">I'm front-end developer based in Poland</span>
-    </h1>
+        <div class="links">
+            <a href="https://github.com/DamianProchaska">
+                <img src="img/github.png" alt="">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/damian-prochaska-06a9181a0/">
+                <img src="img/linkedin.png" alt="">
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:damian.prochaska@gmail.com">
+                <img src="img/mail.png" alt="">
+                <span>damian.prochaska@gmail.com</span>
+            </a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="custom-shape-divider-bottom-1645026081">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <h2>LET ME <br> <span>INTRODUCE</span> <br>MYSELF</h2>
+        <div class="aboutMe">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima suscipit dolorum vero consequatur tempore officia mollitia, praesentium, architecto eveniet molestiae illum nihil magni blanditiis repudiandae. Aut vitae voluptatem nisi odio sed alias veritatis laboriosam eligendi, maiores culpa in pariatur laudantium placeat enim perferendis necessitatibus totam! Nihil dolores rerum id.
+        </div>
+        <div class="temp"></div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
