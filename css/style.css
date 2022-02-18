@@ -29,10 +29,20 @@
     justify-content:space-between;
     align-items: center;
     padding: 15px 5%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    transition: 0.2s;
       /* background: linear-gradient(0deg, rgba(31,40,51,1) 0%, rgba(69,162,158,1) 100%); */
       box-shadow: 0 0 10px -4px black;
       background-color: var(--headerColor);
       /* height: 80px; */
+  }
+
+  .hide {
+    transition: 0.2s;
+    top: -80px;
   }
 
   .nav_links {
