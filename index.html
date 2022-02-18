@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-        <p class="logo">About me</p>
         <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
             <path
                   class="line top"
@@ -24,6 +23,26 @@
                   class="line bottom"
                   d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
           </svg>
+
+        <nav>
+            <ul class="nav_links">
+                <li><a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</a></li>
+                <li><a onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Experience</a></li>
+                <li><a onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Projects</a></li>
+                <li><a onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">Skills</a></li>
+            </ul>
+        </nav>
+        <button>Contact Me</button>
+
+        <div id="mobile_menu" class="overlay">
+            <div class="overlay_content">
+                <a onclick="document.getElementById('about').scrollIntoView()">About Me</a>
+                <a onclick="document.getElementById('experience').scrollIntoView()">Experience</a>
+                <a onclick="document.getElementById('projects').scrollIntoView()">Projects</a>
+                <a onclick="document.getElementById('skills').scrollIntoView()">Skills</a>
+            </div>
+        </div>
+
     </header>
     <section class="landingPage">
         <div class="welcome">
@@ -74,16 +93,16 @@
         <div class="aboutMe">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima suscipit dolorum vero consequatur tempore officia mollitia, praesentium, architecto eveniet molestiae illum nihil magni blanditiis repudiandae. Aut vitae voluptatem nisi odio sed alias veritatis laboriosam eligendi, maiores culpa in pariatur laudantium placeat enim perferendis necessitatibus totam! Nihil dolores rerum id.
         </div>
-        <h2>EXPERIENCE</h2>
+        <h2 id="experience">EXPERIENCE</h2>
         <div class="experience">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur nihil nemo recusandae quia ad minima, rerum possimus autem voluptas. Libero autem delectus minus? Quasi assumenda neque excepturi maiores molestiae. Enim, aliquid illo, eius quo quis dignissimos sint ad laborum a quidem cupiditate accusantium. Nemo doloribus quae odit incidunt veritatis.
         </div>
-        <h2>PROJECTS</h2>
+        <h2 id="projects">PROJECTS</h2>
         <div class="projects">
             <div>Library</div>
             <div>Employee manager</div>
         </div>
-        <h2>SKILLS</h2>
+        <h2 id="skills">SKILLS</h2>
         <div class="skills">
 
         </div>
@@ -92,6 +111,6 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/mobile.js"></script>
 </body>
 </html>
